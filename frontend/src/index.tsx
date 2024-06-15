@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client'
 import App from './App';
 import './index.css';
 
 // `root`がnullでないことをTypeScriptに伝えるための非nullアサーション
-const rootElement = document.getElementById('root')!;
-ReactDOM.render(
+const container = document.getElementById('root') as HTMLElement;
+const root = createRoot(container);
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  rootElement
+  </React.StrictMode>
 );
