@@ -1,15 +1,16 @@
+// src/App.tsx
 import React from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes/routes';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          わあああああああああああああああ
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <ChakraProvider>
+      <Router>
+        <Routes />
+      </Router>
+    </ChakraProvider>
   );
 }
 
