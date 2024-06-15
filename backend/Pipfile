@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = ">=3.2"
+djangorestframework = "*"
+psycopg2-binary = "*"
+python-decouple = "*"
+django-environ = "*"
+boto3 = "*"
+ffmpeg = "*"
+ffmpeg-python = "*"
+python-ffmpeg = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
