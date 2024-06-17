@@ -42,6 +42,11 @@ AWS_S3_REGION_NAME = env('AWS_S3_REGION_NAME')
 
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
+OPENAI_API_KEY = env('OPENAI_API_KEY')
+PINECONE_API_KEY = env('PINECONE_API_KEY')
+
+ENCRYPTION_KEY = env('ENCRYPTION_KEY')
+
 
 # Application definition
 
@@ -52,7 +57,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders'
+    'corsheaders',
+    'videos'
 ]
 
 MIDDLEWARE = [
