@@ -10,9 +10,11 @@ psycopg2-binary = "*"
 python-decouple = "*"
 django-environ = "*"
 boto3 = "*"
+asyncio = "*"
 ffmpeg = "*"
-ffmpeg-python = "*"
-python-ffmpeg = "*"
+openai = "*"
+cryptography = "*"
+pinecone-client = "*"
 
 [dev-packages]
 

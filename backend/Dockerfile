@@ -7,7 +7,10 @@ RUN apt-get update && apt-get install -y \
     git \
     && apt-get clean
 
+RUN apt-get install ffmpeg -y
+
 COPY requirements.txt /app/
+RUN pip install ffmpeg-python
 RUN pip install -r requirements.txt
 
 COPY . /app
