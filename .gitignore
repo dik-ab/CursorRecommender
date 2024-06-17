@@ -1,5 +1,5 @@
 .env
 venv
 frontend/node_modules/*
-backend/voisync/__pycache__
-backend/videos/__pycache__
+__pycache__/
+*.py[cod]
