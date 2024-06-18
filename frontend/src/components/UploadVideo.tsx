@@ -11,7 +11,7 @@ const UploadVideo: React.FC<UploadVideoProps> = ({ onFileChange, onUpload, messa
   return (
     <Box p="5">
       <VStack spacing="5" align="stretch">
-        <Text fontSize="2xl">Upload a Video</Text>
+        <Text fontSize="2xl">Upload Video</Text>
         <Input type="file" accept="video/*" onChange={onFileChange} />
         <Button colorScheme="teal" onClick={onUpload}>
           Upload
